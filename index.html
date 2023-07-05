@@ -5,49 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/assets/css/index.css" />
-    <script src="/assets/js/index.js" type="script"></script>
+    <script src="/assets/js/script.js"></script>
     <title>Портфолио</title>
   </head>
   <body>
     <header class="header_menu">
       <ul class="hList">
         <li>
-          <a href="#click" class="menu">
-            <h2 class="menu-title">Общая информация</h2>
-            <ul class="menu-dropdown">
+          <details class="menu Accordion">
+            <summary class="menu-title menu-title_2nd">Умения</summary>
+              <ul class="content">
+                <li>Html</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>1C</li>
+              </ul>
+          </details>
+        </li>
+        <li>
+          <details class="menu Accordion">
+          <summary class="menu-title menu-title_1st">Информация</summary>
+            <ul class="content">
               <li>Симонов</li>
               <li>Илья</li>
               <li>Сергеевич</li>
               <li>2002 года</li>
               <li>Русский</li>
             </ul>
-          </a>
+          </details>
         </li>
         <li>
-          <a href="#click" class="menu">
-            <h2 class="menu-title menu-title_2nd">Умения</h2>
-            <ul class="menu-dropdown">
-              <li>Html</li>
-              <li>CSS</li>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>1C</li>
-              <li>Windows Server</li>
-            </ul>
-          </a>
-        </li>
-        <li>
-          <a href="#click" class="menu">
-            <h2 class="menu-title menu-title_3rd">Образование</h2>
-            <ul class="menu-dropdown">
+          <details class="menu Accordion">
+            <summary class="menu-title menu-title_3rd">Образование</summary>
+            <ul class="content">
               <li>Esil University</li>
               <li>GeekBrains</li>
               <li>Вебинары</li>
               <li>Книги</li>
             </ul>
-          </a>
+          </details>
         </li>
-      </ul>
+            </ul>
     </header>
     <div class="imgLoader"></div>
     <div class="container">
