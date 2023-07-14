@@ -13,14 +13,13 @@ body {
   text-align: center;
   margin-bottom: 150px;
   min-height: 100vh;
-  margin: 0;
+  margin: 0 auto;
   align-items: center;
   justify-content: center;
   background-color: #bfdfec;
   background-repeat: repeat-x;
   background-image: url("https://i.stack.imgur.com/b7z29.png");
   animation: movement 20s linear infinite;
-  min-width: 440px;
 }
 
 @keyframes movement {
@@ -66,7 +65,7 @@ a {
 
 .menu-title {
   display: block;
-  width: 150px;
+  width: 130px;
   height: 66px;
   padding: 23px 0 0;
   color: #fff;
@@ -83,7 +82,7 @@ a {
 
 .content {
   background-color: #fff;
-  width: 150px;
+  width: 130px;
   height: 220px;
   white-space: pre-line;
   list-style: none;
@@ -100,7 +99,6 @@ a {
 }
 
 .hList {
-  overflow: hidden;
   display: flex;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -153,12 +151,6 @@ a {
   }
 }
 
-@media (min-device-width: 390px) {
-  .container {
-    width: 390px;
-  }
-}
-
 .container {
   position: relative;
   width: 420px;
@@ -166,8 +158,15 @@ a {
   border-radius: 4px;
   height: 420px;
   font-family: 'Raleway', sans-serif;
-  margin-bottom: 120px;
+  margin-bottom: 80px;
 }
+
+@media (min-width: 0px) and (max-width: 395px) {
+  .container{
+    width: 365px;
+  }
+}
+
 
 .title {
   position: absolute;
@@ -187,7 +186,12 @@ a {
   text-align: left;
 }
 
-@media (min-device-width: 490px) {
+.credit a{
+  color: brown;
+}
+
+
+@media (min-width: 0px) and (max-width: 390px){
   .book {
     transform: scale(1.2);
   }
@@ -1153,44 +1157,21 @@ a {
     transform: rotateY(180deg);
   }
 }
-.instagramLink {
-  position: fixed;
-  bottom: 0.5em;
-  right: 0.5em;
-}
+
 .instagramLink img {
   width: 2em;
   filter: grayscale(100%);
   transition: filter 0.25s;
 }
-.instagramLink img:hover {
-  filter: grayscale(0%);
-}
 
-.vkLink {
-  position: fixed;
-  bottom: 2.5em;
-  right: 0.5em;
-}
 .vkLink img {
   width: 2em;
   filter: grayscale(100%);
   transition: filter 0.25s;
 }
-.vkLink img:hover {
-  filter: grayscale(0%);
-}
 
-.tgLink {
-  position: fixed;
-  bottom: 4.5em;
-  right: 0.5em;
-}
 .tgLink img {
   width: 2em;
   filter: grayscale(100%);
   transition: filter 0.25s;
-}
-.tgLink img:hover {
-  filter: grayscale(0%);
 }
