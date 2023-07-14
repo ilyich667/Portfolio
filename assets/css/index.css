@@ -74,7 +74,7 @@ a {
 
 .menu-title {
   display: block;
-  width: 130px;
+  width: 125px;
   height: 66px;
   padding: 23px 0 0;
   color: #fff;
@@ -172,7 +172,7 @@ a {
 
 @media (min-width: 0px) and (max-width: 500px) {
   .container{
-    width: 365px;
+    width: 355px;
   }
 }
 
